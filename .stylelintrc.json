@@ -1,0 +1,48 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extends",
+          "ignores"
+        ]
+      }
+    ],
+    "indentation": "tab",
+    "number-leading-zero": null,
+    "unit-allowed-list": [
+      "px",
+      "em",
+      "rem",
+      "s",
+      "rpx",
+      "%"
+    ],
+    "unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": [
+          "rpx"
+        ]
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "default-namespace"
+        ]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements":[
+          "v-deep"
+        ]
+      }
+    ]
+  }
+}
